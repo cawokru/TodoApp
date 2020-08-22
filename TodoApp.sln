@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoApp.Api", "TodoApp.Api\TodoApp.Api.csproj", "{BA888A14-5022-43F7-8038-C4B652DA22A3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoApp.Common", "TodoApp.Common\TodoApp.Common.csproj", "{72588046-6C5E-4CAD-8ABF-138BBCB67ADD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoApp.Domain", "TodoApp.Domain\TodoApp.Domain.csproj", "{0859D7DA-8572-406A-809D-E5CDAED718EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoApp.DataAccess", "TodoApp.DataAccess\TodoApp.DataAccess.csproj", "{CF9D43B4-D581-4DDB-B07E-C7ADDCF1D481}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoApp.Application", "TodoApp.Application\TodoApp.Application.csproj", "{53B0AD32-4DD9-47EC-937E-582DC0DA49E5}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TodoApp.ClientApp", "TodoApp.ClientApp\", "{75741CFC-B381-485C-B8EA-5B9BDB528F74}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_61375"
+		Debug.AspNetCompiler.PhysicalPath = "TodoApp.ClientApp\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61375\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_61375"
+		Release.AspNetCompiler.PhysicalPath = "TodoApp.ClientApp\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61375\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "61375"
+		SlnRelativePath = "TodoApp.ClientApp\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA888A14-5022-43F7-8038-C4B652DA22A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA888A14-5022-43F7-8038-C4B652DA22A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA888A14-5022-43F7-8038-C4B652DA22A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA888A14-5022-43F7-8038-C4B652DA22A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72588046-6C5E-4CAD-8ABF-138BBCB67ADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72588046-6C5E-4CAD-8ABF-138BBCB67ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72588046-6C5E-4CAD-8ABF-138BBCB67ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72588046-6C5E-4CAD-8ABF-138BBCB67ADD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0859D7DA-8572-406A-809D-E5CDAED718EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0859D7DA-8572-406A-809D-E5CDAED718EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0859D7DA-8572-406A-809D-E5CDAED718EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0859D7DA-8572-406A-809D-E5CDAED718EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF9D43B4-D581-4DDB-B07E-C7ADDCF1D481}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF9D43B4-D581-4DDB-B07E-C7ADDCF1D481}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF9D43B4-D581-4DDB-B07E-C7ADDCF1D481}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF9D43B4-D581-4DDB-B07E-C7ADDCF1D481}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53B0AD32-4DD9-47EC-937E-582DC0DA49E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53B0AD32-4DD9-47EC-937E-582DC0DA49E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53B0AD32-4DD9-47EC-937E-582DC0DA49E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53B0AD32-4DD9-47EC-937E-582DC0DA49E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75741CFC-B381-485C-B8EA-5B9BDB528F74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75741CFC-B381-485C-B8EA-5B9BDB528F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75741CFC-B381-485C-B8EA-5B9BDB528F74}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{75741CFC-B381-485C-B8EA-5B9BDB528F74}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DE7FF49-AC02-486E-A380-167A467A843E}
+	EndGlobalSection
+EndGlobal
