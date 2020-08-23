@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TodoApp.Common.Web\TodoApp.Common.Web.csproj" />
     <ProjectReference Include="..\TodoApp.Common\TodoApp.Common.csproj" />
     <ProjectReference Include="..\TodoApp.DataAccess\TodoApp.DataAccess.csproj" />
     <ProjectReference Include="..\TodoApp.Domain\TodoApp.Domain.csproj" />

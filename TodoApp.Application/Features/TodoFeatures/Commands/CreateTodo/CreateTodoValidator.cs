@@ -30,7 +30,7 @@ namespace TodoApp.Application.Features.TodoFeatures.Commands.CreateTodo
         {
             var todos = await _repository.GetTodos(cancellationToken);
 
-            return todos.Any(td => td.Title == title);
+            return !todos.Any(td => td.Title == title);
         }
     }
 }

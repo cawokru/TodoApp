@@ -2,7 +2,7 @@
 
 namespace TodoApp.DataAccess.Exceptions
 {
-    class NotFoundException: Exception
+    public class NotFoundException: Exception
     {
         public NotFoundException()
             : base()
@@ -21,7 +21,7 @@ namespace TodoApp.DataAccess.Exceptions
 
         // TODO: add translation service
         public NotFoundException(string name, object key)
-            : base($"Entity \"{name}\" ({key}) was not found.")
+            : base($"Entity {name} ({key}) was not found.")
         {
         }
     }
