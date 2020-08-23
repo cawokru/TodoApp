@@ -37,6 +37,9 @@ namespace TodoApp.Api
 
             services.AddControllers(options =>
                 options.Filters.Add(typeof(ApiExceptionFilterAttribute)));
+
+            services.AddOpenApiDocument(opt =>
+                opt.Title = "TodoApp Api");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,6 +48,11 @@ namespace TodoApp.Api
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+
+                // serve basic Swagger
+                app.UseOpenApi();
+                app.UseSwaggerUi3();
+                app.UseReDoc();
             }
 
             app.UseHttpsRedirection();
