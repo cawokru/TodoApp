@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TodoApp.DataAccess\TodoApp.DataAccess.csproj" />
+    <ProjectReference Include="..\TodoApp.Application\TodoApp.Application.csproj" />
   </ItemGroup>
 
 

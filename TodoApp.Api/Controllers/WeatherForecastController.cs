@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using TodoApp.Application.Features.TodoFeatures.Queries.GetTodos;
 using TodoApp.DataAccess.Repositories.Todos;
 using TodoApp.Domain.Entities;
 
@@ -12,7 +14,7 @@ namespace TodoApp.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class WeatherForecastController : ApiBaseController
     {
         private static readonly string[] Summaries = new[]
         {
@@ -20,12 +22,12 @@ namespace TodoApp.Api.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
-        private readonly ITodoRepository _todoRepository;
+        private readonly IMediator _mediator;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, ITodoRepository todoRepository)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IMediator mediator)
         {
             _logger = logger;
-            _todoRepository = todoRepository;
+            _mediator = mediator;
         }
 
         [HttpGet]
@@ -42,9 +44,9 @@ namespace TodoApp.Api.Controllers
         }
 
         [HttpGet("testget")]
-        public async Task<IEnumerable<Todo>> GetTodos()
+        public async Task<GetTodosResponse> GetTodos()
         {
-            return await _todoRepository.GetTodos(new CancellationTokenSource().Token);
+            return await _mediator.Send(new GetTodosRequest());
         }
     }
 }

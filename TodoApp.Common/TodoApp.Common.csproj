@@ -4,4 +4,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Exceptions\" />
+    <Folder Include="Middlewares\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+
 </Project>

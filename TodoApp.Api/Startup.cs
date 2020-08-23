@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using TodoApp.Application;
 using TodoApp.DataAccess;
 
 namespace TodoApp.Api
@@ -26,11 +27,14 @@ namespace TodoApp.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddApplication();
 
+            //TODO: Review project dependencies for EF
             services.AddDataAccess(opt => {
                 opt.ConnectionString = Configuration["ConnectionStrings:DefaultConnection"]; // TODO: Replace with env variable
             });
+
+            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

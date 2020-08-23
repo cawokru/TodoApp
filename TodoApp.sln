@@ -34,6 +34,12 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TodoApp.ClientApp", "TodoAp
 		SlnRelativePath = "TodoApp.ClientApp\"
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{25529798-3252-43FE-ADF2-3F7BDE909A66}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{B3FA0910-3A12-48BC-8187-8684AC9B9CCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{FFCD0C0B-4849-4934-B78F-AD60773BF544}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +73,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{72588046-6C5E-4CAD-8ABF-138BBCB67ADD} = {25529798-3252-43FE-ADF2-3F7BDE909A66}
+		{0859D7DA-8572-406A-809D-E5CDAED718EC} = {B3FA0910-3A12-48BC-8187-8684AC9B9CCC}
+		{CF9D43B4-D581-4DDB-B07E-C7ADDCF1D481} = {FFCD0C0B-4849-4934-B78F-AD60773BF544}
+		{53B0AD32-4DD9-47EC-937E-582DC0DA49E5} = {25529798-3252-43FE-ADF2-3F7BDE909A66}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9DE7FF49-AC02-486E-A380-167A467A843E}
