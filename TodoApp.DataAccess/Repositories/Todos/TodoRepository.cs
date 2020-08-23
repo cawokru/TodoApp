@@ -19,9 +19,16 @@ namespace TodoApp.DataAccess.Repositories.Todos
 
         public async Task<Todo> GetTodoById(Guid id, CancellationToken cancellationToken)
         {
-            return await _context.Todos
+            var entity = await _context.Todos
                 .AsNoTracking()
                 .SingleOrDefaultAsync(td => td.Id == id, cancellationToken);
+
+            if (entity == null)
+            {
+                throw new NotFoundException(nameof(Todo), id);
+            }
+
+            return entity;
         }
 
         //TODO: Get tasks by user
@@ -43,13 +50,6 @@ namespace TodoApp.DataAccess.Repositories.Todos
 
         public async Task<Todo> UpdateTodo(Todo todo, CancellationToken cancellationToken)
         {
-            var entity = await _context.Todos.FindAsync(todo.Id);
-
-            if (entity == null)
-            {
-                throw new NotFoundException(nameof(Todo), todo.Id);
-            }
-
             _context.Entry(todo).State = EntityState.Modified;
 
             await _context.SaveChangesAsync(cancellationToken);

@@ -5,7 +5,7 @@ using TodoApp.DataAccess.Repositories.Todos;
 
 namespace TodoApp.Application.Features.TodoFeatures.Queries.GetTodos
 {
-    public class GetTodosHandler : IRequestHandler<GetTodosRequest, GetTodosResponse>
+    class GetTodosHandler : IRequestHandler<GetTodosRequest, GetTodosResponse>
     {
         private readonly ITodoRepository _repository;
 
