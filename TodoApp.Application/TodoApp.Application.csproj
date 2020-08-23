@@ -8,11 +8,10 @@
     <Folder Include="Features\TodoFeatures\Commands\CreateTodo\" />
     <Folder Include="Features\TodoFeatures\Commands\DeleteTodo\" />
     <Folder Include="Features\TodoFeatures\Commands\UpdateTodo\" />
-    <Folder Include="Features\TodoFeatures\Queries\GetTodoById\" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
     <PackageReference Include="FluentValidation" Version="9.1.3" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
   </ItemGroup>
